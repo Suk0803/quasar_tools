@@ -7,6 +7,7 @@
         icon="timer"
         @click="onClickTimer()"
       />
+      <q-btn label="카운트다운" color="green" @click="onClickCountDown()" />
     </div>
   </q-page>
 </template>
@@ -22,5 +23,9 @@ const max = 5;
 
 const onClickTimer = () => {
   $router.push('/stopwatch');
+};
+
+const onClickCountDown = () => {
+  $router.push('/countdown');
 };
 </script>
